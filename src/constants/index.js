@@ -1,223 +1,166 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "AI Content Creation Platform",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A full-stack AI-powered platform for content creation, featuring article generation, blog titles, image creation, and background removal.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Features AI-powered article writing (Google Gemini), image generation (ClipDrop API), and background removal (Cloudinary AI).",
+      "Includes secure user authentication with Clerk, offering usage limits and premium subscription plans.",
+      "Built with a modern, responsive UI using React 19, Tailwind CSS, and Framer Motion for smooth animations.",
+      "Backend powered by Node.js and Express.js with a MongoDB database for robust performance.",
     ],
-    href: "",
+    href: "https://arix-ai.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/ai-platform.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "React 19",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Google Gemini",
+        path: "/assets/logos/gemini.svg",
       },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "Staff Management System",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A full-stack staff management app built with role-based dashboards and task tracking functionality.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Designed a dark-themed responsive UI with protected routing for secure access.",
+      "Implemented form-based task creation with persistent routing.",
+      "The application is fully deployed and live on Vercel.",
     ],
-    href: "",
+    href: "https://devpromanagementsystem.vercel.app/",
     logo: "",
     image: "/assets/projects/auth-system.jpg",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 2,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Vercel",
+        path: "/assets/logos/vercel.svg",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Stroke Prediction Desktop App",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A GUI-based desktop application that predicts stroke risk from health inputs using Machine Learning models.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Integrated 7 different ML algorithms, using SMOTE for data balancing to improve accuracy.",
+      "Visualized model performance and results using ROC curves, confusion matrices, and feature importance graphs.",
+      "Built with a user-friendly interface using Python and Tkinter.",
     ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
+    href: "https://github.com/nameisahmedh/strokeprediction",
     logo: "",
     image: "/assets/projects/elearning.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
+        name: "Scikit-learn",
+        path: "/assets/logos/scikitlearn.svg",
       },
       {
         id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "XGBoost",
+        path: "/assets/logos/xgboost.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Tkinter",
+        path: "/assets/logos/tkinter.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "LLM-based Data Organization (Upcoming)",
+    description: "A project focused on synergizing data organization using Large Language Models to create intelligent and efficient data management systems.",
+    subDescription: [
+        "Currently in the conceptual and planning phase.",
+        "Will explore advanced AI techniques for data structuring and retrieval.",
+    ],
+    href: "",
+    logo: "",
+    tags: [
+      {
+        id: 1,
+        name: "LLM",
+        path: "/assets/logos/llm.svg",
+      },
+      {
+        id: 2,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 3,
+        name: "Vector DB",
+        path: "/assets/logos/vectordb.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Smart AI Reminder (Upcoming)",
+    description: "An intelligent reminder application that learns user habits and context to provide timely and relevant notifications.",
+    subDescription: [
+        "In the ideation stage, focusing on user-centric design and proactive assistance.",
+        "Aims to go beyond simple time-based alerts to offer smart, predictive reminders.",
+    ],
+    href: "",
+    logo: "",
+    tags: [
+      {
+        id: 1,
+        name: "AI/ML",
+        path: "/assets/logos/ai-ml.svg",
+      },
+      {
+        id: 2,
+        name: "Mobile App",
+        path: "/assets/logos/mobile.svg",
+      },
+      {
+        id: 3,
+        name: "NLP",
+        path: "/assets/logos/nlp.svg",
       },
     ],
   },
@@ -225,104 +168,96 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "GitHub",
+    href: "https://github.com/nameisahmedh",
+    icon: "/assets/socials/github.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/mohammad-kammar-ahmed-48b391253/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/name_is_ahmedh/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "General Secretary",
+    job: "CodeOholics Community - CMRTC",
+    date: "2024 - Present",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Led cross-functional teams to manage large-scale event outreach, handle registrations, and ensure smooth execution from start to finish.",
+      "Responsible for fostering a strong tech culture on campus by organizing technical events, workshops, and coding competitions.",
+      "Spearheaded 'Hack for Mini 2.0,' a national-level online hackathon that successfully attracted over 1300 participants from various states across India.",
+      "Orchestrated 'Technovanza 4.0,' a national-level intercollege hackathon involving more than 800 participants and over 130 teams.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Event Management Lead",
+    job: "Tech Events & Hackathons",
+    date: "2023 - 2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Actively contributed to the planning and execution of multiple tech events.",
+      "Managed event logistics, participant coordination, and technical infrastructure for large-scale competitions.",
+      "Collaborated with sponsors, judges, and technical teams to ensure successful event delivery.",
+      "Developed strong organizational and communication skills through managing diverse teams and stakeholders.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "NCC 'B' Certificate Holder",
+    job: "National Cadet Corps",
+    date: "2022 - 2023",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Demonstrated discipline, leadership, and commitment to national service through rigorous training programs.",
+      "Developed strong teamwork and leadership skills through various military-style exercises and community service activities.",
+      "Participated in camps, parades, and social service initiatives, contributing to community development.",
     ],
   },
 ];
-export const reviews = [
+
+export const resumeLink = "https://drive.google.com/uc?export=download&id=1Eg4yd3zEvALF7WB3Z5pPiIaFeyy28ZFl";
+
+export const codingJourney = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
+    title: "The Foundation",
+    period: "2022 - 2023",
+    description: "Began my journey by building foundational frontend web applications using HTML, CSS, and JavaScript.",
+    highlights: [
+      "Focused on exploration and practical learning by creating numerous projects to solidify my understanding.",
+      "Started networking and building valuable connections within the local tech community."
+    ]
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
+    title: "Growth and Specialization",
+    period: "2023 - 2024",
+    description: "Deepened my knowledge by connecting with and learning from senior developers in the field.",
+    highlights: [
+      "Transitioned from basic projects to developing full-fledged frontend applications and expanded my skills into full-stack development.",
+      "Began a deep dive into mastering Data Structures and Algorithms (DSA)."
+    ]
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    title: "AI & Machine Learning Focus",
+    period: "2024 - Mid 2025",
+    description: "Learned AI tools and made AI projects, started working on AI and LLM workflows.",
+    highlights: [
+      "Developed expertise in AI tools and frameworks for practical applications.",
+      "Built multiple AI-powered projects including content creation platforms and ML prediction systems.",
+      "Started working extensively with Large Language Models and AI workflows."
+    ]
   },
   {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
-  },
-  {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
-  },
-  {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
-  },
-  {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
-  },
-  {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
-  },
+    title: "AI Generalist Path",
+    period: "2025 - Present",
+    description: "Learned AI automations and have a keen interest in becoming an AI generalist.",
+    highlights: [
+      "Mastered AI automation tools and techniques for various use cases.",
+      "Actively pursuing the path to become an AI generalist with broad expertise across AI domains.",
+      "Eagerly seeking opportunities to apply AI knowledge in real-world scenarios."
+    ]
+  }
 ];

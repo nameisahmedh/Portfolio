@@ -6,13 +6,15 @@ Source: https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a2
 Title: Tenhun Falling spaceman (FanArt)
 */
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
 export function Astronaut(props) {
   const group = useRef();
+  const [isHovered, setIsHovered] = useState(false);
+  const [isDancing, setIsDancing] = useState(false);
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb"
   );
@@ -25,21 +27,66 @@ export function Astronaut(props) {
 
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30 });
+  const xSpring = useSpring(0, { damping: 35, stiffness: 120 });
+  const zSpring = useSpring(0, { damping: 35, stiffness: 120 });
+  const scaleSpring = useSpring(1, { damping: 30, stiffness: 100 });
+  
   useEffect(() => {
     ySpring.set(-1);
   }, [ySpring]);
-  useFrame(() => {
-    group.current.position.y = ySpring.get();
+  
+  useEffect(() => {
+    if (isHovered) {
+      // Smooth escape to random position
+      const escapePositions = [
+        [-2.5, -1.2], // left
+        [3.2, -1.2],  // right
+        [0.5, 1.8],   // top
+        [0.5, -2.8],  // bottom
+      ];
+      const randomEscape = escapePositions[Math.floor(Math.random() * escapePositions.length)];
+      xSpring.set(randomEscape[0]);
+      zSpring.set(randomEscape[1]);
+      scaleSpring.set(0.8); // Slightly smaller when escaping
+    } else {
+      // Smooth return to original position
+      xSpring.set(0);
+      zSpring.set(0);
+      scaleSpring.set(1);
+    }
+  }, [isHovered, xSpring, zSpring, scaleSpring]);
+  
+  useFrame((state) => {
+    if (group.current) {
+      if (isHovered) {
+        // Nervous movement when escaped
+        group.current.position.y = ySpring.get() + Math.sin(state.clock.elapsedTime * 4) * 0.15;
+        group.current.rotation.z = 2.2 + Math.sin(state.clock.elapsedTime * 5) * 0.08;
+        group.current.rotation.x = -Math.PI / 2 + Math.sin(state.clock.elapsedTime * 3) * 0.05;
+      } else {
+        // Normal floating
+        group.current.position.y = ySpring.get() + Math.sin(state.clock.elapsedTime * 1.2) * 0.08;
+        group.current.rotation.z = 2.2;
+        group.current.rotation.x = -Math.PI / 2;
+      }
+      
+      group.current.position.x = (props.position?.[0] || 1.3) + xSpring.get();
+      group.current.position.z = (props.position?.[2] || 0) + zSpring.get();
+      group.current.scale.setScalar((props.scale || 0.3) * scaleSpring.get());
+    }
   });
   return (
-    <group
-      ref={group}
-      {...props}
-      dispose={null}
-      rotation={[-Math.PI / 2, -0.2, 2.2]}
-      scale={props.scale || 0.3}
-      position={props.position || [1.3, -1, 0]}
-    >
+    <>
+      <group
+        ref={group}
+        {...props}
+        dispose={null}
+        rotation={[-Math.PI / 2, -0.2, 2.2]}
+        scale={props.scale || 0.3}
+        position={props.position || [1.3, -1, 0]}
+        onPointerEnter={() => setIsHovered(true)}
+        onPointerLeave={() => setIsHovered(false)}
+      >
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model">
           <group name="Root">
@@ -122,8 +169,11 @@ export function Astronaut(props) {
             </group>
           </group>
         </group>
+        </group>
       </group>
-    </group>
+      
+
+    </>
   );
 }
 

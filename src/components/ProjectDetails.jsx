@@ -31,18 +31,34 @@ const ProjectDetails = ({
           <div className="flex items-center justify-between mt-4">
             <div className="flex gap-3">
               {tags.map((tag) => (
-                <img
-                  key={tag.id}
-                  src={tag.path}
-                  alt={tag.name}
-                  className="rounded-lg size-10 hover-animation"
-                />
+                <div key={tag.id} className="flex flex-col items-center gap-1">
+                  <img
+                    src={tag.path}
+                    alt={tag.name}
+                    className="rounded-lg size-10 hover-animation"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="hidden items-center justify-center w-10 h-10 bg-gray-700 rounded-lg text-xs text-white">
+                    {tag.name.slice(0, 2)}
+                  </div>
+                  <span className="text-xs text-neutral-400">{tag.name}</span>
+                </div>
               ))}
             </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
-              View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" href={href} />
-            </a>
+            {href && (
+              <a 
+                href={href} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-blue-400 hover:text-blue-300"
+              >
+                View Project{" "}
+                <img src="assets/arrow-up.svg" className="size-4" />
+              </a>
+            )}
           </div>
         </div>
       </motion.div>

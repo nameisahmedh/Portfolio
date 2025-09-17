@@ -17,10 +17,9 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Ali Sanati</p>
+            <p className="headtext">Hi, I'm Kammar Ahmed</p>
             <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend dev
-              skills to deliver dynamic and software and web applications.
+              a Data Science student who translates ideas into impact through both software and data analysis. My projects include developing machine learning models, data visualization dashboards, and full-stack web applications. I focus on leveraging data to solve real-world problems and create meaningful insights.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -31,47 +30,72 @@ const About = () => {
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-5xl text-gray-500">
-              CODE IS CRAFT
+            <p className="flex items-end text-3xl text-gray-500">
+              TOOLS & LANGUAGES
             </p>
             <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              style={{ rotate: "15deg", top: "15%", left: "10%" }}
+              image="assets/logos/java.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              style={{ rotate: "15deg", top: "15%", left: "10%" }}
+              image="assets/logos/n8n.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
+              style={{ rotate: "15deg", top: "15%", left: "10%" }}
+              image="assets/logos/mysql.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              style={{ rotate: "15deg", top: "15%", left: "10%" }}
+              image="assets/logos/mongodb.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              style={{ rotate: "-25deg", top: "45%", left: "35%" }}
+              image="assets/logos/python.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              style={{ rotate: "35deg", top: "70%", left: "60%" }}
+              image="assets/logos/html5.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              style={{ rotate: "-35deg", top: "25%", left: "65%" }}
+              image="assets/logos/javascript.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              style={{ rotate: "25deg", top: "55%", left: "15%" }}
+              image="assets/logos/nodejs.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-15deg", top: "10%", left: "40%" }}
+              image="assets/logos/react.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "45deg", top: "35%", left: "5%" }}
+              image="assets/logos/tailwindcss.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "75%", left: "35%" }}
+              image="assets/logos/visualstudiocode.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "20deg", top: "60%", left: "80%" }}
+              image="assets/logos/github.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-30deg", top: "85%", left: "10%" }}
+              image="assets/logos/vercel.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -81,7 +105,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Mars, and open to remote work worldwide
+              I'm based in Hyderabad, India, and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -100,10 +124,9 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
+            <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools taht
-              allow me to build robust and scalable applications
+              I specialize in data science tools, web development frameworks, and programming languages that allow me to build data-driven applications and analytical solutions
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
