@@ -219,7 +219,7 @@ export const experiences = [
   },
 ];
 
-export const resumeLink = "https://drive.google.com/uc?export=download&id=1Eg4yd3zEvALF7WB3Z5pPiIaFeyy28ZFl";
+export const resumeLink = "https://drive.google.com/uc?export=download&id=1yy_kp2PWfmRmNeNnVaPtPZn15nqzMrBJ";
 
 export const codingJourney = [
   {

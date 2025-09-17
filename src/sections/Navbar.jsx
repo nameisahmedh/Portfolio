@@ -47,7 +47,7 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link flex items-center gap-2" href="https://drive.google.com/uc?export=download&id=1Eg4yd3zEvALF7WB3Z5pPiIaFeyy28ZFl" target="_blank" rel="noopener noreferrer">
+        <a className="nav-link flex items-center gap-2" href="https://drive.google.com/uc?export=download&id=1yy_kp2PWfmRmNeNnVaPtPZn15nqzMrBJ" target="_blank" rel="noopener noreferrer">
           Resume
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
