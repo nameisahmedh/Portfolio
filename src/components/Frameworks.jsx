@@ -11,7 +11,8 @@ export function Frameworks() {
     "python",
     "nodejs",
     "vercel",
-    "mongodb"
+    "mongodb",
+    "jupyter"
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import "tailwindcss";
 @theme {
-  --color-primary: #001C2B;
+  --color-primary: #002A3D;
   --color-midnight: #06091f;
   --color-navy: #161a31;
   --color-indigo: #1f1e39;
@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  background: #001C2B;
+  background: #002A3D;
   font-family: "Funnel Display", sans-serif;
   color: white;
   overflow-x: hidden;
@@ -117,14 +117,14 @@ body {
 }
 
 .grid-default-color {
-  @apply p-6 bg-gradient-to-b from-primary/80 to-primary/60 rounded-2xl border border-white/10;
+  @apply p-6 bg-gradient-to-b from-primary/70 to-primary/50 rounded-2xl border border-white/20;
 }
 
 .grid-special-color {
   @apply p-6 bg-gradient-to-b from-royal/80 to-lavender/60 rounded-2xl border border-white/10;
 }
 .grid-black-color {
-  @apply p-6 bg-gradient-to-tl from-primary/90 via-primary/70 to-primary/90 rounded-2xl border border-white/10;
+  @apply p-6 bg-gradient-to-tl from-primary/80 via-primary/60 to-primary/80 rounded-2xl border border-white/20;
 }
 
 /* Contact Section*/

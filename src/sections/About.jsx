@@ -40,6 +40,11 @@ const About = () => {
             />
             <Card
               style={{ rotate: "15deg", top: "15%", left: "10%" }}
+              image="/assets/logos/jupyter.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "15deg", top: "15%", left: "10%" }}
               image="/assets/logos/n8n.svg"
               containerRef={grid2Container}
             />
