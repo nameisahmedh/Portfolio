@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef();
@@ -13,7 +13,7 @@ const About = () => {
         {/* Grid 1 */}
         <div className="flex items-end grid-default-color grid-1">
           <img
-            src="assets/coding-pov.png"
+            src="/assets/coding-pov.png"
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
@@ -35,67 +35,67 @@ const About = () => {
             </p>
             <Card
               style={{ rotate: "15deg", top: "15%", left: "10%" }}
-              image="assets/logos/java.svg"
+              image="/assets/logos/java.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "15deg", top: "15%", left: "10%" }}
-              image="assets/logos/n8n.svg"
+              image="/assets/logos/n8n.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "15deg", top: "15%", left: "10%" }}
-              image="assets/logos/mysql.svg"
+              image="/assets/logos/mysql.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "15deg", top: "15%", left: "10%" }}
-              image="assets/logos/mongodb.svg"
+              image="/assets/logos/mongodb.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-25deg", top: "45%", left: "35%" }}
-              image="assets/logos/python.svg"
+              image="/assets/logos/python.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "35deg", top: "70%", left: "60%" }}
-              image="assets/logos/html5.svg"
+              image="/assets/logos/html5.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-35deg", top: "25%", left: "65%" }}
-              image="assets/logos/javascript.svg"
+              image="/assets/logos/javascript.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "25deg", top: "55%", left: "15%" }}
-              image="assets/logos/nodejs.svg"
+              image="/assets/logos/nodejs.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-15deg", top: "10%", left: "40%" }}
-              image="assets/logos/react.svg"
+              image="/assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "45deg", top: "35%", left: "5%" }}
-              image="assets/logos/tailwindcss.svg"
+              image="/assets/logos/tailwindcss.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "75%", left: "35%" }}
-              image="assets/logos/visualstudiocode.svg"
+              image="/assets/logos/visualstudiocode.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "60%", left: "80%" }}
-              image="assets/logos/github.svg"
+              image="/assets/logos/github.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "85%", left: "10%" }}
-              image="assets/logos/vercel.svg"
+              image="/assets/logos/vercel.svg"
               containerRef={grid2Container}
             />
           </div>
